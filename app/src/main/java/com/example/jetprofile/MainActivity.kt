@@ -32,15 +32,15 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Column (
+                    Column(
                         horizontalAlignment = Alignment.CenterHorizontally,
                         modifier = Modifier.padding(20.dp)
-                        ){
+                    ) {
                         // スペース
                         Spacer(modifier = Modifier.height(20.dp))
                         // プロフィール画像
                         Image(
-                            painter = painterResource(id=R.drawable.panda),
+                            painter = painterResource(id = R.drawable.panda),
                             contentDescription = "プロフィール",
                             modifier = Modifier
                                 .size(100.dp)
@@ -60,8 +60,28 @@ class MainActivity : ComponentActivity() {
                             text = "職業:エンジニア",
                             color = Color.Gray,
                             fontSize = 16.sp,
-                            fontWeight = FontWeight.ExtraBold
                         )
+                        // スペース
+                        Spacer(modifier = Modifier.height(20.dp))
+
+                        Column(horizontalAlignment = Alignment.Start,
+                        modifier = Modifier.fillMaxSize()) {
+                            // 会社名
+                            Text(
+                                text = "Goooogle",
+                                fontSize = 26.sp,
+                                fontWeight = FontWeight.Bold,
+                            )
+                            // スペース
+                            Spacer(modifier = Modifier.height(20.dp))
+                            // 部署・グループ名
+                            Text(
+                                text = "カンパニー",
+                                color = Color.Gray,
+                                fontSize = 16.sp,
+                            )
+                        }
+
                     }
                 }
             }
