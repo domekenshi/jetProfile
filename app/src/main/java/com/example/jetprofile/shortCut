@@ -1,0 +1,43 @@
+https://developer.android.com/studio/intro/keyboard-shortcuts
+
+
+行の追加
+行を追加する
+Win：Shift + Enter
+Mac：Shift + Enter
+
+コードの再フォーマット
+Win：Ctrl + Alt + l（エル）
+Mac：command + option + l（エル）
+
+
+
+
+
+
+ツールウィンドウ	Windows と Linux	マックOS
+プロジェクト	Alt+1	Command+1
+バージョン管理	Alt+9	Command+9
+走る	Shift+F10	Control+R
+デバッグ	Shift+F9	Control+D
+ログキャット	Alt+6	Command+6
+エディターに戻る	Esc	Esc
+すべてのツールウィンドウを非表示	Control+Shift+F12	Command+Shift+F12
+
+
+コード補完
+Android Studio には 3 種類のコード補完機能があり、次の表に示すようにキーボード ショートカットを使用してアクセスできます。
+
+表 2.コード補完のキーボードショートカット
+
+タイプ	説明	Windows と Linux	マックOS
+基本的な完了	変数、型、メソッド、式などの基本的な候補を表示します。基本補完を 2 回続けて呼び出すと、プライベート メンバーやインポートされていない静的メンバーなど、さらに多くの結果が表示されます。	Control+Space	Control+Space
+スマート補完	コンテキストに基づいて関連するオプションを表示します。スマート補完では、予想される型とデータ フローが考慮されます。スマート補完を 2 回続けて呼び出すと、チェーンを含むさらに多くの結果が表示されます。	Control+Shift+Space	Control+Shift+Space
+文の完成	不足している括弧、角括弧、中括弧、書式などを追加して、現在のステートメントを完成させます。	Control+Shift+Enter	Command+Shift+Enter
+
+
+クラスを探す	Control+N	Command+O
+ファイルを検索する（クラスの代わりに）	Control+Shift+N	Command+Shift+O
+
+
+カーソル位置の行を削除	Control+Y	Command+Delete
