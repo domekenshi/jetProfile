@@ -8,7 +8,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -76,6 +76,9 @@ fun MainContent() {
         // スペース
         Spacer(modifier = Modifier.height(20.dp))
         // 詳細表示ボタン
+        // rememberはメモリの中にデータを保持する
+        // mutableState状態管理
+        var isShowDetail by remember{ mutableStateOf(false) }
         Button(
             modifier = Modifier.fillMaxWidth(),
             colors = ButtonDefaults.buttonColors(
@@ -83,7 +86,7 @@ fun MainContent() {
                     0xFFF856FA
                 )
             ),
-            onClick = {/*TODO*/ },
+            onClick = {isShowDetail = !isShowDetail },
         ) {
             Text(
                 text = "詳細を表示",
@@ -94,6 +97,8 @@ fun MainContent() {
         // スペース
         Spacer(modifier = Modifier.height(20.dp))
         // 趣味と居住地
-        DetailSection()
+        if(isShowDetail){
+            DetailSection()
+        }
     }
 }
